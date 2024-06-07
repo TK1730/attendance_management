@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoリスト画面</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='Todo.css')}}">
+    <h1>選択されたユーザー</h1>
+</head>
+<body>
+    <div id="input" class="center">
+        <label>TODO: <input id="todo"><button id="submit">登録</button></label><br> 
+        優先度: <select>
+          <option>低</option>
+          <option selected>普</option>
+          <option>高</option>
+        </select>
+        <label>期日: <input type="date"></label><br>
+      </div>
+
+      <div>
+        <table>
+            <tr>
+                <th>期日</th>
+                <th>優先度</th>
+                <th>ToDo</th>
+            </tr>
+            <tr>
+                <td>入力された期日</td>
+                <td>入力された優先度</td>
+                <td>入力されたToDo</td>
+            </tr>
+        </table>
+      </div>
+</body>
+</html>

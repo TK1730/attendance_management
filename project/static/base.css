@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.header{
+  background-color: #def7ff;
+}
+
+.wrapper{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-item {
+  display: block;
+  padding: 1.5rem 1rem;
+}

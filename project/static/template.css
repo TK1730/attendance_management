@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: yellowgreen;
+}
+.menu-group{
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    /* background-color: bisque; */
+}
+
+.menu-group a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item {
+    font-size: large;
+    padding: 8px 25px;
+}

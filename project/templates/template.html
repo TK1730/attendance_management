@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>勤怠管理</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='template.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <ul class="menu-group">
+                    <li class="menu-item"><a href="{{ url_for('form') }}">座席状況</a></li>
+                    <li class="menu-item"><a href="{{ url_for('index') }}">ToDo</a></li>
+                    <li class="menu-item"><a href="">マイページ</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

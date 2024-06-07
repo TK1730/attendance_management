@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>勤怠管理</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <nav class="nav">
+        <ul class="navbar-menu">
+            <class="navbar-item"><a href={{ url_for('main.index') }}>
+            Home
+            </a></class=>
+            {% if current_user.is_authenticated %}
+            <li class="navbar-item"><a href={{ url_for('main.profile') }}>
+            Profile
+            </a></li>
+            <li class="navbar-item"><a href={{ url_for( 'main.room' )}}>
+            Room
+            </a></li>
+            {% endif %}
+            {% if not current_user.is_authenticated %}
+            <li class="navbar-item"><a href={{ url_for('auth.login') }}>
+            Login
+            </a></li>
+            <li class="navbar-item"><a href={{ url_for('auth.signup') }}>
+            Signup
+            </a></li>
+            {% endif %}
+            {% if current_user.is_authenticated %}
+            <li class="navbar-item"><a href={{ url_for('auth.logout') }}>
+            Logout
+            </a></li>
+            {% endif %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container has-text-centered">
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>勤退管理</title>
+    <meta name="descriotion" content="勤退">
+    <link rel="stylesheet" href="{{url_for('static', filename='Kaihatu2.css')}}">
+    </head>
+    <body>
+        <main>
+            <table class="member" border="1">
+                <tr>
+                    <td><a href={{ url_for('temp') }}>笹原</a></td>
+                    <td><a href={{ url_for('mypage') }}>湯川</a></td>
+                    <td><a href={{ url_for('mypage') }}>鹿内</a></td>
+                    <td><a href={{ url_for('mypage') }}>大野</a></td>
+                </tr>
+                <tr>
+                    <td><a href={{ url_for('mypage') }}>寺嶋</a></td>
+                    <td><a href={{ url_for('mypage') }}>高島</a></td>
+                    <td><a href={{ url_for('mypage') }}>林</a></td>
+                    <td><a href={{ url_for('mypage') }}>入江</a></td>
+
+                </tr>
+            </table>
+            <table class="log" border="1">
+                <tr>
+                    <td>勤退履歴</td>
+                </tr>
+            </table>
+
+            <table class="botan" border="1">
+                    <tr>
+                        <td><a href="https://www.google.co.jp/">退勤</a></td>
+                    </tr>
+            </table>
+        </main>
+    </body>
+</html>

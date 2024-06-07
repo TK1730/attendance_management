@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='Kaihatu2.css') }}">
+            <table class="member" border="1">
+                <tr>
+                    <td><a href={{ url_for('main.profile') }}>笹原</a></td>
+                    <td><a href={{ url_for('main.profile') }}>湯川</a></td>
+                    <td><a href={{ url_for('main.profile') }}>鹿内</a></td>
+                    <td><a href={{ url_for('main.profile') }}>大野</a></td>
+                </tr>
+                <tr>
+                    <td><a href={{ url_for('main.profile') }}>寺嶋</a></td>
+                    <td><a href={{ url_for('main.profile') }}>高島</a></td>
+                    <td><a href={{ url_for('main.profile') }}>林</a></td>
+                    <td><a href={{ url_for('main.profile') }}>入江</a></td>
+
+                </tr>
+            </table>
+            <table class="log" border="1">
+                <tr>
+                    <td>勤退履歴</td>
+                </tr>
+            </table>
+
+            <table class="botan" border="1">
+                    <tr>
+                        <td><a href={{ url_for('auth.logout') }}>退勤</a></td>
+                    </tr>
+            </table>
+{% endblock %}

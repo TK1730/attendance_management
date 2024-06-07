@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 25vh;    
+}
+
+.member{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: 5%;
+    border-collapse: collapse;
+    /* background-color: yellow; */
+    font-size:40px;
+    text-align:center;
+    a{
+    text-decoration:none;
+    color:red;
+    }
+}
+
+.log{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    font-size:15px;
+    background: #fffac2;
+}
+.botan{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-size:20px;
+}
+p{
+    font-size:50px;
+}
